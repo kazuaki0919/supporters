@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFEDFF"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:text="@string/documents"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="64dp"
+        android:textColor="#00f"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/document_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_margin="12dp"
+        android:progressDrawable="@drawable/custom_progress"
+        android:max="100"
+        android:progress="0" />
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/all_progress"
+            android:text="0%"
+            android:layout_width="wrap_content"
+            android:textSize="32dp"
+            android:layout_margin="8dp"
+            android:textColor="#00f"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/calc_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:layout_margin="8dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/calc"
+            android:textSize="32dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:maxHeight="600dp"
+        android:background="#DFFFDF"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/add_document_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:text="@string/add"
+        android:textSize="36dp" />
+
+
+</LinearLayout>

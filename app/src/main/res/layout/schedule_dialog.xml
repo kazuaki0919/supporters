@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/day_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/day_default"
+                android:textSize="24dp" />
+
+
+            <Button
+                android:id="@+id/datepicker_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:text="@string/calender"
+                android:textSize="36dp" />
+
+        </LinearLayout>
+
+        <NumberPicker
+            android:id="@+id/numberPickerHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hour"
+            android:textSize="24dp" />
+
+        <NumberPicker
+            android:id="@+id/numberPickerMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/min"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/add_date_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="15dp"
+        android:layout_gravity="right"
+    android:text="@string/add"
+    android:textSize="36sp" />
+
+</LinearLayout>

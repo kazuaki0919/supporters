@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFEDFF"
+    android:orientation="vertical"
+    android:gravity="top" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="90dp"
+        android:background="#AFEDFF"
+        android:orientation="horizontal"
+        android:gravity="top" >
+
+        <TextView
+            android:id="@+id/s_fragment_text"
+            android:text="@string/schedule"
+            android:layout_width="wrap_content"
+            android:background="@drawable/custom_text"
+            android:layout_marginLeft="8dp"
+            android:textSize="26dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:layout_marginRight="12dp"
+            android:textSize="24dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:text="メール作成" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:maxHeight="280dp"
+        android:background="#DFFFDF"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/add_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:text="候補日を追加"
+        android:textSize="30dp" />
+
+    <ListView
+        android:id="@+id/list_person"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="#DFFFDF"
+        android:maxHeight="300dp"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/add_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:text="参加者を追加"
+        android:textSize="30dp" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/set_timer"
+            android:textSize="24dp" />
+
+        <NumberPicker
+            android:id="@+id/numberPickerMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/min"
+            android:textSize="24dp" />
+
+        <NumberPicker
+            android:id="@+id/numberPickerSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sec"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="だいほん"
+        android:textSize="30sp" />
+
+    <Button
+    android:id="@+id/settime_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="15dp"
+    android:text="@string/setting"
+    android:textSize="36sp" />
+
+</LinearLayout>
